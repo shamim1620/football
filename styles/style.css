@@ -33,6 +33,7 @@ body{
     text-decoration: none;
     color: #FFFFFF;
  }
+
  .top-bannar{
     display: flex;
     align-items: center;
@@ -44,7 +45,13 @@ body{
  .bannar-image img{
     width: 556px;
     height: 438px;
-   
+    position: relative;
+    overflow: hidden;
+ 
+ }
+ .bannar-image img:hover{
+    transform: scale(.7) rotate(360deg);
+    transition:transform 3s ease .5s;
  }
  h1{
     font-weight: 700;
@@ -81,7 +88,7 @@ body{
     width: 300px;
     height: 256px;
   }
-    
+
   /*---------------------
   Match Highlights style
   ---------------------- */
@@ -121,7 +128,7 @@ body{
    }
 
    /*-----------
-    Media Quirey
+    Media Query
     -----------*/
     /* Mobile Device */
     @media only screen and (max-width:688px) {
