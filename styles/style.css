@@ -127,19 +127,35 @@ body{
     @media only screen and (max-width:688px) {
         .top-bannar, .highlight{
             flex-direction: column;
+            margin: 0;
         }
         .nav-item{
             display: flex;
            flex-direction: column;
         }
-        .bannar-image img ,.highlight-image img,.footer-image img{
+        .bannar-image img, .highlight-image img,.footer-image img{
             width: 100%;
             height: 100%;
+            margin-top: 20px;
             padding: 0;
-            margin: 0;
+
         }
         .players{
             grid-template-columns: repeat(1, 330px);
         }
 
+    }
+    /* Tablet Device */
+    @media only screen and (min-width:689px) and (max-width:992px){
+        .top-bannar, .highlight{
+            flex-direction: column;
+            margin: 0;
+        }
+        .players{
+            grid-template-columns: repeat(2, 330px);
+        }
+        span a{
+            margin: 0px 5px;
+        }
+        
     }
