@@ -42,8 +42,8 @@ body{
     
  }
  .bannar-image img{
-    width: 388px;
-    height: 428px;
+    width: 556px;
+    height: 438px;
    
  }
  h1{
@@ -82,3 +82,41 @@ body{
     height: 256px;
   }
     
+  /*---------------------
+  Match Highlights style
+  ---------------------- */
+  .highlight{
+    display: flex;
+    align-items: center;
+    margin: 100px;
+
+  }
+  .highlight-detial{
+      padding: 30px;
+  }
+  .highlight-image img{
+    width: 567px;
+    height: 427px;
+    padding: 35px;
+  }
+  .highlight-detial h2{
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #0A0826;
+  }
+
+  /*----------
+   footer style 
+   ----------*/
+   footer{
+       text-align: center;
+   }
+   .footer-image img{
+       width: 500px;
+       height: 110px;
+   }
+   .logos .icon{
+       margin: 15px;
+  
+   }
