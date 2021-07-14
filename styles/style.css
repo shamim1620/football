@@ -92,7 +92,7 @@ body{
 
   }
   .highlight-detial{
-      padding: 30px;
+    padding: 30px;
   }
   .highlight-image img{
     width: 567px;
@@ -112,11 +112,34 @@ body{
    footer{
        text-align: center;
    }
-   .footer-image img{
+   .footer-image img {
        width: 500px;
        height: 110px;
    }
    .logos .icon{
        margin: 15px;
-  
    }
+
+   /*-----------
+    Media Quirey
+    -----------*/
+    /* Mobile Device */
+    @media only screen and (max-width:688px) {
+        .top-bannar, .highlight{
+            flex-direction: column;
+        }
+        .nav-item{
+            display: flex;
+           flex-direction: column;
+        }
+        .bannar-image img ,.highlight-image img,.footer-image img{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .players{
+            grid-template-columns: repeat(1, 330px);
+        }
+
+    }
